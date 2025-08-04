@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>反物质维度：不可名状 - Antimatter Dimension Neverfictional</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+</head>
+<!-- bj AD Post End Mods我有四不玩， 一不玩ADP，因为它「杂」，内容太多，足足四五个阶段几十个天体，这我要玩到猴年马月才能玩完啊？ 二不玩ADE，因为它「未」，游戏介绍看起来内容很多，七八层重置让人垂涎欲滴，其实压根没做出实际内容，这我还是先等到2029年再玩吧； 三不玩ADR，因为它「弃」，一开始看起来好好的做了一些修补升级和敌对，结果你告诉我Kohler没做完就被丢到一边了？然后ADRR又搞量子拖延？这我怎么玩啊？ 四不玩ADN，因为它「乱」，和ADE一样，前期还是大饼的时候就开始乱，游戏越到后期剧情代入感越好但是机制也越多，就算有快捷键这么乱的界面给谁看啊？-->
+
+<body>
+    <div class="container" style="color:#4F5957; font-family: Calibri; text-align:center; font-size: 140%">
+        <hr>
+        <div class="videocontainer">
+            <video preload muted id="realityanimbg" style="opacity: 0; display: none;">
+        <source src="images/realityanimbg.webm" type="video/webm">
+      </video>
+        </div>
+        <!-- 状态面板 -->
+        <div id="status-panel">
+            <div id="AM-Amount">你有 10 反物质。</div>
+            <div id="AM-PerSec">你现在正在以 0 反物质/游戏秒的速度获得反物质。</div>
+            <div id="AM-tick" style="visibility: hidden">
+                <div id="AM-tickTL">每次获得计数频率，都可以让反物质获取变为 1.1 倍 。</div>
+                <button id="AM-tickSpeed" style="color:black;" class="storebtn">花费: 1000</button>
+                <div id="AM-tickSpeedAmount">当前倍率：1 倍（实际购买数：0）</div>
+            </div>
+            <td><button id="AM-buy" style="color:black" class="storebtn">购买最大数量：1</button></td>
+        </div>
+
+        <h3>维度</h3>
+
+        <!-- 维度表格 -->
+        <table class="table">
+            <tr id="AM-1" style="font-size: 200%">
+                <td style="text-align:center">
+                    <div id="AM-1q">第 1 反物质维度</div>
+                </td>
+                <td style="text-align:center">
+                    <div id="AM-1s">购买后可显示</div>
+                </td>
+                <td><button id="AM-1c" style="color:black" class="storebtn">花费：10</button></td>
+            </tr>
+
+            <tr id="AM-2" style="visibility: hidden; font-size: 200%">
+                <td style="text-align:center">
+                    <div id="AM-2q">第 2 反物质维度</div>
+                </td>
+                <td style="text-align:center">
+                    <div id="AM-2s">购买后可显示</div>
+                </td>
+                <td><button id="AM-2c" style="color:black" class="storebtn">花费：100</button></td>
+            </tr>
+
+            <tr id="AM-3" style="visibility: hidden; font-size: 200%">
+                <td style="text-align:center">
+                    <div id="AM-3q">第 3 反物质维度</div>
+                </td>
+                <td style="text-align:center">
+                    <div id="AM-3s">购买后可显示</div>
+                </td>
+                <td><button id="AM-3c" style="color:black" class="storebtn">花费：1000</button></td>
+            </tr>
+
+            <tr id="AM-4" style="visibility: hidden; font-size: 200%">
+                <td style="text-align:center">
+                    <div id="AM-4q">第 4 反物质维度</div>
+                </td>
+                <td style="text-align:center">
+                    <div id="AM-4s">购买后可显示</div>
+                </td>
+                <td><button id="AM-4c" style="color:black" class="storebtn">花费：1.00 W</button></td>
+            </tr>
+
+            <tr id="AM-5" style="visibility: hidden; font-size: 200%">
+                <td id="AM-5q" style="text-align:center">第 5 反物质维度</td>
+                <td style="text-align:center">
+                    <div id="AM-5s">购买后可显示</div>
+                </td>
+                <td><button id="AM-5c" style="color:black" class="storebtn">花费：100.0 W</button></td>
+            </tr>
+
+            <tr id="AM-6" style="visibility: hidden; font-size: 200%">
+                <td id="AM-6q" style="text-align:center">第 6 反物质维度</td>
+                <td style="text-align:center">
+                    <div id="AM-6s">购买后可显示</div>
+                </td>
+                <td><button id="AM-6c" style="color:black" class="storebtn">花费：10.00 E</button></td>
+            </tr>
+
+            <tr id="AM-7" style="visibility: hidden; font-size: 200%">
+                <td id="AM-7q" style="text-align:center">第 7 反物质维度</td>
+                <td style="text-align:center">
+                    <div id="AM-7s">购买后可显示</div>
+                </td>
+                <td><button id="AM-7c" style="color:black" class="storebtn">花费：1.00 Z</button></td>
+            </tr>
+
+            <tr id="AM-8" style="visibility: hidden; font-size: 200%">
+                <td id="AM-8q" style="text-align:center">第 8 反物质维度</td>
+                <td style="text-align:center">
+                    <div id="AM-8s">购买后可显示</div>
+                </td>
+                <td><button id="AM-8c" style="color:black" class="storebtn">花费：1000 Z</button></td>
+            </tr>
+        </table>
+        <!--visibility: hidden;-->
+        <button id="AM-DB" style="width: 250px; height: 150px;">
+            进行维度提升，重置以前的维度。<br>
+            第 1 次维度提升时，将解锁第 5 维度，<br>
+            并给予第 1~2 维度以 2 倍的加成。<br>
+        需要：20 第 4 反物质维度。</button>
+        <button id="AM-AG" style="width: 250px; height: 150px;">
+            进行星系重置，重置以前的维度、维度提升和计数频率。<br>
+            第 1 次星系重置时，将解锁反物质加速器 4，<br>
+            再次给予第 1~8 维度以 10 倍的加成，<br>
+            并让计数频率的效果基数增加 0.1。<br>
+        需要：1e45 反物质。</button>
+
+        <!-- <button style=" width: 200px; height: 150px; visibility: hidden; " id="save ">存档</button>
+        <button style="width: 200px; height: 150px; visibility: hidden; " id="invert ">读档</button> -->
+    </div>
+
+    <script src="javascripts/game.js "></script>
+    <!-- <script type="module " src="javascripts/ExpantaNum.js "></script> -->
+</body>
+
+</html>
